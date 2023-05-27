@@ -15,6 +15,7 @@ public class LogInSteps  {
 	WebDriver driver;
 	@Given("User Launch Addactin Login")
 	public void user_Launch_Addactin_Login() {
+		System.out.println("Change");
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.get("http://www.adactin.com/HotelApp/");
@@ -31,7 +32,8 @@ public class LogInSteps  {
 	@When("Click Login button")
 	public void click_Login_button() {
 		 WebElement Submit = driver.findElement(By.id("login"));
-		 Submit.click();  
+		 Submit.click();
+		 
 	}
 	
 	
