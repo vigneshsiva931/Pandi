@@ -26,6 +26,7 @@ public class LogInSteps  {
 		   userName.sendKeys("VigneshPandi1");
 		   WebElement passWord = driver.findElement(By.id("password"));
 		   passWord.sendKeys("Pandi@321");
+		   System.out.println("b Changes");
 	}
 
 	@When("Click Login button")
